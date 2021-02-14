@@ -1,6 +1,6 @@
-# Pancake Router
+# Pai Router
 
-### Bsc-Test
+### Oklink-Test
 
 The following assumes the use of `node@>=10`.
 
