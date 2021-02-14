@@ -39,7 +39,7 @@ contract PieRouter01 is IPieRouter01 {
         if (IPieFactory(factory).getPair(tokenA, tokenB) == address(0)) {
             IPieFactory(factory).createPair(tokenA, tokenB);
         }
-        (uint reserveA, uint reserveB) = PancakeLibrary.getReserves(factory, tokenA, tokenB);
+        (uint reserveA, uint reserveB) = PieLibrary.getReserves(factory, tokenA, tokenB);
         if (reserveA == 0 && reserveB == 0) {
             (amountA, amountB) = (amountADesired, amountBDesired);
         } else {
